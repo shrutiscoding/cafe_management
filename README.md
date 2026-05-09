@@ -103,7 +103,7 @@ npm install
 npm run dev
 ```
 
-md id="n2"
+
 ## 🗄 Database Scripts
 
 Database scripts are available in the `/database` folder:
