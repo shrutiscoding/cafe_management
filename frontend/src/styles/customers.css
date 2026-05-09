@@ -1,0 +1,114 @@
+/* ================= HEADER ================= */
+.customer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* ================= SEARCH ================= */
+.search-box {
+  padding: 10px 14px;
+  width: 260px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.2s;
+}
+
+.search-box:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.15);
+}
+
+/* ================= COUNT ================= */
+.count {
+  margin: 12px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* ================= TABLE CARD ================= */
+.table-card {
+  background: white;
+  border-radius: 14px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  overflow-x: auto;
+}
+
+/* ================= TABLE ================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+/* HEADER */
+th {
+  background: #f4f6f8;
+  text-align: left;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+/* ROWS */
+td {
+  padding: 12px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  color: #444;
+}
+
+/* HOVER */
+tr:hover {
+  background: #fafafa;
+  transition: 0.2s;
+}
+
+/* ================= DELETE BUTTON (FROM INVENTORY STYLE) ================= */
+.delete-btn {
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 6px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: 0.2s;
+
+  background: #e74c3c !important;
+  color: #fff !important;
+}
+
+/* FORCE HOVER RESET */
+.delete-btn:hover {
+  background: #c0392b !important;
+  color: #fff !important;   /* 🔥 prevents brown text */
+  transform: scale(1.05);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .customer-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  table {
+    min-width: 500px;
+  }
+}

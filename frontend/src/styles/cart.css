@@ -1,0 +1,168 @@
+/* FULL PAGE CENTER */
+.cart-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+  padding: 40px;
+  min-height: 80vh;
+}
+
+/* BOTH CARDS */
+.cart-card-box,
+.summary-card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* LEFT CARD */
+.cart-card-box {
+  width: 60%;
+}
+
+/* RIGHT CARD */
+.summary-card {
+  width: 30%;
+  height: fit-content;
+}
+
+/* CART ITEM */
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* IMAGE */
+.cart-item img {
+  width: 65px;
+  height: 65px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* INFO */
+.info {
+  flex: 1;
+}
+
+.info h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.info p {
+  margin: 3px 0;
+  color: #666;
+}
+
+/* QTY CONTROLS */
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+/* 🔥 DARK + BUTTONS */
+.qty button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #222;        /* DARK BUTTON */
+  color: white;            /* WHITE ICON */
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.qty button:hover {
+  background: #000;
+  transform: scale(1.05);
+}
+
+/* QTY NUMBER */
+.qty span {
+  min-width: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* REMOVE BUTTON */
+.remove {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #e74c3c;
+}
+
+/* SUMMARY */
+.summary-card h2 {
+  margin-bottom: 15px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* CHECKOUT */
+.checkout-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  background: #d85a30;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* EMPTY */
+.empty {
+  color: gray;
+  margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .cart-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart-card-box,
+  .summary-card {
+    width: 100%;
+  }
+}
+.qty button.dark-btn {
+  background: #111;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.qty button.dark-btn:hover {
+  background: #333;
+}

@@ -1,0 +1,41 @@
+/* SIDEBAR OVERLAPS TOPBAR */
+.sidebar {
+  width: 220px;
+  position: fixed;
+  top: 0;          /* 🔥 START FROM VERY TOP */
+  left: 0;
+  bottom: 0;
+
+  background: #1e1e2f;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  /* 🔥 ABOVE TOPBAR */
+}
+
+/* HEADER */
+.sidebar-header {
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid #2c2c3e;
+}
+
+/* NAV ITEMS */
+.nav-item {
+  padding: 10px 20px;
+  margin: 5px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* HOVER */
+.nav-item:hover {
+  background: #33334d;
+}
+
+/* ACTIVE */
+.nav-item.active {
+  background: #4b7bec;
+}

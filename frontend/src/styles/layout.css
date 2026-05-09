@@ -1,0 +1,85 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* MAIN LAYOUT */
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;   /* 🔥 ADD THIS */
+  overflow: hidden;
+}
+
+/* TOPBAR */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;              /* 🔥 FULL WIDTH */
+  width: 100%;          /* 🔥 FULL WIDTH */
+
+  height: 60px;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+/* BODY (SIDEBAR + CONTENT) */
+.layout-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+
+  background: #1e1e2f;
+  color: white;
+  padding: 20px;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  margin-left: 220px;
+  margin-top: 60px;
+
+  padding: 20px;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+/* NAV ITEMS */
+.nav-item {
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.nav-item:hover {
+  background: #33334d;
+}
+
+.nav-item.active {
+  background: #4b7bec;
+}
