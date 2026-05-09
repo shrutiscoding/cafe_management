@@ -86,7 +86,7 @@ artisian-cafe/
 ├── docs/
 ├── screenshots/
 └── README.md
-
+```
 ## ⚙️ Installation
 
 ### Backend
