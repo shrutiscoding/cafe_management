@@ -86,3 +86,40 @@ artisian-cafe/
 ├── docs/
 ├── screenshots/
 └── README.md
+
+## ⚙️ Installation
+
+### Backend
+
+```bash
+cd backend
+npm install
+npm start
+
+### Frontend
+cd frontend
+npm install
+npm run dev
+
+```md id="n2"
+## 🗄 Database Scripts
+
+Database scripts are available in the `/database` folder:
+
+- `oracle.sql`
+- `cassandra.cql`
+- `neo4j.cypher`
+- `couchdb.sh`
+
+## 🚀 Future Enhancements
+
+- AI-powered recommendations
+- Real-time order tracking
+- Cloud deployment
+- Mobile application
+- Advanced analytics dashboard
+
+
+## 👩‍💻 Author
+
+Shruti Chougale
